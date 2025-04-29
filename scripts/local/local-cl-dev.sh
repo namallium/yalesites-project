@@ -16,21 +16,21 @@ source ./scripts/local/util/say.sh
 
 _say "Move into tokens repo and create a global link"
 cd web/themes/contrib/atomic
-[ ! -d "_yale-packages/tokens" ] && git clone git@github.com:yalesites-org/tokens.git _yale-packages/tokens
+[ ! -d "_yale-packages/tokens" ] && git clone git@github.com:namallium/tokens.git _yale-packages/tokens
 cd _yale-packages/tokens || exit
 npm link
 cd ../..
 _say "Move into component library and create a global link"
-[ ! -d "_yale-packages/component-library-twig" ] && git clone git@github.com:yalesites-org/component-library-twig.git _yale-packages/component-library-twig
+[ ! -d "_yale-packages/component-library-twig" ] && git clone git@github.com:namallium/component-library-twig.git _yale-packages/component-library-twig
 cd _yale-packages/component-library-twig || exit
 npm link
 _say "Move into Atomic and use the component-library global link"
 cd ../..
-npm link @yalesites-org/component-library-twig
+npm link @namallium/component-library-twig
 _say "Move into the component-library and use the tokens global link"
 cd _yale-packages/component-library-twig || exit
 # Run npm ci. This is required to patch our version of Twig.js.
 npm ci
-npm link @yalesites-org/tokens
+npm link @namallium/tokens
 _say "Run the develop script in the component library"
 npm run develop

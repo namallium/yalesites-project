@@ -62,7 +62,7 @@ lando composer require drupal/PROJECT --no-update
 # Return the project repo root.
 cd ../../../..
 # Add the module to the project repository.
-lando composer update @yalesites-org/yalesites_profile
+lando composer update @namallium/yalesites_profile
 # Do not check in changes to the top level composer.json file.
 # Never check in the project's composer.lock file.
 ```

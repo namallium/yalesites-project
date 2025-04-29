@@ -40,7 +40,7 @@ npm install
 npm run build-with-install
 
 # Configure Composer to use source packaged versions.
-lando composer config --global 'preferred-install.yalesites-org/*' source
+lando composer config --global 'preferred-install.namallium/*' source
 
 # Manually remove the originally downloaded dist packed version.
 lando ssh -c "rm -rf web/themes/contrib/atomic"

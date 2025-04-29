@@ -1,5 +1,5 @@
 {
-  "name": "yalesites-org/yalesites_profile",
+  "name": "namallium/yalesites_profile",
   "type": "drupal-custom-profile",
   "repositories": {
     "drupal": {
@@ -112,9 +112,9 @@
     "jjj/chosen": "2.2.1",
     "laminas/laminas-escaper": "2.13.0",
     "northernco/ckeditor5-anchor-drupal": "0.4.0",
-    "yalesites-org/ai_engine": "1.2.9",
-    "yalesites-org/atomic": "1.46.0",
-    "yalesites-org/yale_cas": "v1.0.5"
+    "namallium/ai_engine": "1.2.9",
+    "namallium/atomic": "1.46.0",
+    "namallium/yale_cas": "v1.0.5"
   },
   "minimum-stability": "dev",
   "prefer-stable": true,

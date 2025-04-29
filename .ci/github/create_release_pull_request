@@ -24,7 +24,7 @@ if [[ -z "$PR_NUMBER" ]]; then
   PR_NUMBER=$(echo "$pull_request_response" | jq -r '.number')
 
   # Add reviewer to pull request.
-  gh pr edit "$PR_NUMBER" --add-reviewer yalesites-org/yalesites-reviewers
+  gh pr edit "$PR_NUMBER" --add-reviewer namallium/yalesites-reviewers
 
   # Set PR_NUMBER for Github Actions.
   echo PR_NUMBER="$PR_NUMBER" >> "$GITHUB_OUTPUT"

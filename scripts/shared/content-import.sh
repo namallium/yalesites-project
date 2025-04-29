@@ -2,7 +2,7 @@
 
 STARTERKIT_VERSION="latest"
 STARTERKIT_FILE="starterkit.zip"
-DOWNLOAD_URL="https://github.com/yalesites-org/yalesites-starterkit/releases/$STARTERKIT_VERSION/download/$STARTERKIT_FILE"
+DOWNLOAD_URL="https://github.com/namallium/yalesites-starterkit/releases/$STARTERKIT_VERSION/download/$STARTERKIT_FILE"
 
 # Download starterkit export.
 if curl -s -O -L "$DOWNLOAD_URL"; then

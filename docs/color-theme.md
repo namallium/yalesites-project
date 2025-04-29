@@ -10,7 +10,7 @@
 
 ## Adding a new color value
 To add a new color value to the design system: 
-- **Step 1**: In the `tokens` repository ([github](https://github.com/yalesites-org/tokens)) 
+- **Step 1**: In the `tokens` repository ([github](https://github.com/namallium/tokens)) 
   - open the `tokens/figma-export/tokens.json` file
   - Locate the `color` key which should look something like the following:
 ```
@@ -58,7 +58,7 @@ To add a new color value to the design system:
 ```
 ---
 - **Step 3**: Compile your changes
-  - Following the [readme instructions in the Tokens repository](https://github.com/yalesites-org/tokens#developing-on-the-tokens-within-the-component-library)
+  - Following the [readme instructions in the Tokens repository](https://github.com/namallium/tokens#developing-on-the-tokens-within-the-component-library)
   - In your terminal window, navigate to your tokens repository. This is mostly likely here: `yalesites-project/web/themes/contrib/atomic/_yale-packages/tokens`. If you haven't created a new branch in the tokens repository, create one now. e.g. `yalb-1234-add-brown-color`.
   - When you're ready to compile changes, run `npm run build`. Your changes should be compiled.
   ---
@@ -70,17 +70,17 @@ To add a new color value to the design system:
 
 ---
 - **Step 5**: Using your new color token - updating to the latest tokens release
-  - Once there is a new tokens release, the [component library](https://github.com/yalesites-org/component-library-twig) will need to update to the latest tokens release (`npm update @yalesites-org/tokens`), and then you can use the new color.
-  - In the component library, after you've run the `npm update @yalesites-org/tokens` command, you can commit this change to the `package-lock.json` file. When you push the change to github and the pull request goes through the build process, the new color should be visible on the `colors` page: `/?path=/story/tokens-colors--colors`.
+  - Once there is a new tokens release, the [component library](https://github.com/namallium/component-library-twig) will need to update to the latest tokens release (`npm update @namallium/tokens`), and then you can use the new color.
+  - In the component library, after you've run the `npm update @namallium/tokens` command, you can commit this change to the `package-lock.json` file. When you push the change to github and the pull request goes through the build process, the new color should be visible on the `colors` page: `/?path=/story/tokens-colors--colors`.
   - **Note:** you may need to login to [Netlify](https://app.netlify.com/) to clear the branch preview's cache. Token changes tend to get cached on Netlify.
   - Next, you may want to incorporate your new color value into a new global theme. 
 
 ---
 
 ### Adding a new global theme 
-Global themes are visualized here: https://yalesites-org.github.io/component-library-twig/?path=/story/tokens-colors--global-theme-color-pairings
+Global themes are visualized here: https://namallium.github.io/component-library-twig/?path=/story/tokens-colors--global-theme-color-pairings
 
-- **Step 1**: In the `tokens` repository ([github](https://github.com/yalesites-org/tokens)) 
+- **Step 1**: In the `tokens` repository ([github](https://github.com/namallium/tokens)) 
   - Open the `tokens/tokens/base/color.yml` file
   - Locate the `global-themes` key which should look something like the following:
   ```
@@ -133,7 +133,7 @@ global-themes:
 ```
 
 - **Step 2**: Compile your changes
-  - Following the [readme instructions in the Tokens repository](https://github.com/yalesites-org/tokens#developing-on-the-tokens-within-the-component-library)
+  - Following the [readme instructions in the Tokens repository](https://github.com/namallium/tokens#developing-on-the-tokens-within-the-component-library)
   - In your terminal window, navigate to your tokens repository. This is mostly likely here: `yalesites-project/web/themes/contrib/atomic/_yale-packages/tokens`. If you haven't created a new branch do so now. e.g. `yalb-add-global-theme-four`.
   - When you're ready to compile changes, run `npm run build`. Your changes should be compiled.
   ---
@@ -145,7 +145,7 @@ global-themes:
 
 ---
 - **Step 4**: Using your new global theme
-  - Once there is a new tokens release, the [component library](https://github.com/yalesites-org/component-library-twig) will need to be updated to use the latest tokens release (`npm update @yalesites-org/tokens`), and then you can use the new color.
+  - Once there is a new tokens release, the [component library](https://github.com/namallium/component-library-twig) will need to be updated to use the latest tokens release (`npm update @namallium/tokens`), and then you can use the new color.
   - Your new global theme should be ready to use.
 
 ---
@@ -162,7 +162,7 @@ global-themes:
 ### Adding a new component theme
 Adding a new component theme is similar to adding a new global theme. In addition to component themes, we also have separate files for specific component themes. Component themes live alongside global themes because they are used by more than one component.
 
-Component themes are visualized here: https://yalesites-org.github.io/component-library-twig/?path=/story/tokens-colors--component-theme-color-pairings
+Component themes are visualized here: https://namallium.github.io/component-library-twig/?path=/story/tokens-colors--component-theme-color-pairings
 
 **Component themes are used by the following components:**
 - Action Banner (`component-library-twig/components/02-molecules/banner/action/yds-action-banner.twig`)
@@ -191,7 +191,7 @@ There are specific component theme files for the following components:
 
 The process of updating these, more specific, component themes is the same as what follows, below. The `site-footer` and `site-header` have 5 themes, which requires them to be organized separately from `component-themes`, which only have 3 themes defined. Both `site-footer` and `site-header` make use of the global theme color palettes in the same way in which our `component-themes` do.
 
-- **Step 1**: In the `tokens` repository ([github](https://github.com/yalesites-org/tokens)) 
+- **Step 1**: In the `tokens` repository ([github](https://github.com/namallium/tokens)) 
   - Open the `tokens/tokens/base/color.yml` file
   - Locate the `component-themes` key which should look something like the following:
   ```
@@ -250,7 +250,7 @@ The process of updating these, more specific, component themes is the same as wh
 ```
 
 - **Step 2**: Compile your changes
-  - Follow the [readme instructions in the Tokens repository](https://github.com/yalesites-org/tokens#developing-on-the-tokens-within-the-component-library)
+  - Follow the [readme instructions in the Tokens repository](https://github.com/namallium/tokens#developing-on-the-tokens-within-the-component-library)
   - In your terminal window, navigate to your tokens repository. This is mostly likely here: `yalesites-project/web/themes/contrib/atomic/_yale-packages/tokens`. If you haven't created a new branch do so now. e.g. `yalb-add-component-theme-four` or `yalb-ticketNUMXXX`.
   - When you're ready to compile changes, run `npm run build`. Your changes should be compiled and you should see new files output to the `/build` directory.
   ---
@@ -262,7 +262,7 @@ The process of updating these, more specific, component themes is the same as wh
 
 ---
 - **Step 4**: Using your new component theme
-  - Once there is a new tokens release, the [component library](https://github.com/yalesites-org/component-library-twig) will need to update to the latest tokens release (`npm update @yalesites-org/tokens`), and then you can use the new color.
+  - Once there is a new tokens release, the [component library](https://github.com/namallium/component-library-twig) will need to update to the latest tokens release (`npm update @namallium/tokens`), and then you can use the new color.
   - Your new global theme should be ready to use. 
 ----
 
@@ -287,10 +287,10 @@ The process of updating these, more specific, component themes is the same as wh
 In each component that uses component themes and global themes, each theme should be iterated over so that each component can override its default values set in tokens. Rather, each component can get a new color-slot mapping from each global-theme. 
 
 #### Part one
-For example, in our `_yds-callout.scss` file (https://github.com/yalesites-org/component-library-twig/blob/develop/components/02-molecules/callout/_yds-callout.scss), at the top we include our tokens and the map function. Then we set variables to out `component` and `global` theme objects.
+For example, in our `_yds-callout.scss` file (https://github.com/namallium/component-library-twig/blob/develop/components/02-molecules/callout/_yds-callout.scss), at the top we include our tokens and the map function. Then we set variables to out `component` and `global` theme objects.
 
 ```
-@use '~@yalesites-org/tokens/build/scss/tokens' as sass-tokens;
+@use '~@namallium/tokens/build/scss/tokens' as sass-tokens;
 @use '../../00-tokens/tokens';
 @use '../../00-tokens/functions/map';
 @use '../../01-atoms/atoms';

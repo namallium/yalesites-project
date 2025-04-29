@@ -24,12 +24,12 @@ New commits will look like the following:
     2. Sftp
     3. Git
     4. tr (most linux/bsd/unix based systems have this)
-1. [Terminus with auth tokens already provided](https://github.com/yalesites-org/yalesites-project/blob/develop/docs/setup.md#terminus)
+1. [Terminus with auth tokens already provided](https://github.com/namallium/yalesites-project/blob/develop/docs/setup.md#terminus)
 
 ## Usage
 
 1. Clone this repository.
-1. Clone the [yalesites-starterkit](https://github.com/yalesites-org/yalesites-starterkit) repository at a separate location.
+1. Clone the [yalesites-starterkit](https://github.com/namallium/yalesites-starterkit) repository at a separate location.
 1. In this local repository, you'll run the following:
   
   ```sh

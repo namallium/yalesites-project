@@ -19,7 +19,7 @@ __NOTE: Documentation assumes you are using MacOS with at least 8GB of memory on
 9. [Project Setup](#project-setup)
     ```bash
     # Set up local development version of repo
-    git clone git@github.com:yalesites-org/yalesites-project
+    git clone git@github.com:namallium/yalesites-project
     cd yalesites-project
     npm run setup
     ```
@@ -29,13 +29,13 @@ __NOTE: Documentation assumes you are using MacOS with at least 8GB of memory on
 
 Repositories used to make the platform:
 
-* [Yalesites Project](https://github.com/yalesites-org/yalesites-project): Drupal Platform Site (This repo)
-   * [Yalsites Project Profile modules](https://github.com/yalesites-org/yalesites-project/tree/develop/web/profiles/custom/yalesites_profile/modules/custom): Each subdirectory should have a README describing the function
-* [Atomic Theme](https://github.com/yalesites-org/atomic): Atomic Drupal Theme bridging the Drupal site and the component library
-* [Component Library Twig](https://github.com/yalesites-org/component-library-twig): Component Library
-   * [Deployed Storybook](https://yalesites-org.github.io/component-library-twig)
-* [Tokens](https://github.com/yalesites-org/tokens): Style tokens from Figma used to drive design of the platform and components
-* [ESLint Config and Other Formatting](https://github.com/yalesites-org/eslint-config-and-other-formatting): Reusable Linting/Formatting included in the project
+* [Yalesites Project](https://github.com/namallium/yalesites-project): Drupal Platform Site (This repo)
+   * [Yalsites Project Profile modules](https://github.com/namallium/yalesites-project/tree/develop/web/profiles/custom/yalesites_profile/modules/custom): Each subdirectory should have a README describing the function
+* [Atomic Theme](https://github.com/namallium/atomic): Atomic Drupal Theme bridging the Drupal site and the component library
+* [Component Library Twig](https://github.com/namallium/component-library-twig): Component Library
+   * [Deployed Storybook](https://namallium.github.io/component-library-twig)
+* [Tokens](https://github.com/namallium/tokens): Style tokens from Figma used to drive design of the platform and components
+* [ESLint Config and Other Formatting](https://github.com/namallium/eslint-config-and-other-formatting): Reusable Linting/Formatting included in the project
 
 ## Requirement Details
 
@@ -54,7 +54,7 @@ Keep in mind the above command is a global so it will stay in your `.gitconfig` 
 
 #### Package Personal Access Token
 
-Each environment that needs to pull @yalesites-org packages from GitHub needs to be authenticated using a "Personal Access Token". This only needs to be done once per-environment.
+Each environment that needs to pull @namallium packages from GitHub needs to be authenticated using a "Personal Access Token". This only needs to be done once per-environment.
 
 - Go to `https://github.com/settings/tokens/new`
   - In the "Note" field add something like "YaleSites GitHub Packages"
@@ -121,11 +121,11 @@ By default, composer dependencies are downloaded in a dist packaged version of t
 
 ### Atomic theme
 
-The [YaleSites Atomic theme](https://github.com/yalesites-org/atomic) is a flexible Drupal theme based on the YaleSites design system. The theme is included in the YaleSite installation profile and is the default theme for all new web properties.
+The [YaleSites Atomic theme](https://github.com/namallium/atomic) is a flexible Drupal theme based on the YaleSites design system. The theme is included in the YaleSite installation profile and is the default theme for all new web properties.
 
 ```bash
 # Step 1: Configure Composer to use source packaged versions.
-lando composer config --global 'preferred-install.yalesites-org/*' source
+lando composer config --global 'preferred-install.namallium/*' source
 
 # Step 2: Manually remove the originally downloaded dist packaged version.
 rm -rf web/themes/contrib/atomic
@@ -135,7 +135,7 @@ lando composer update atomic
 
 # Step 4: Verify that the theme is tracking a remote repository.
 git -C web/themes/contrib/atomic ls-remote --get-url
-# Returns: https://github.com/yalesites-org/atomic.git
+# Returns: https://github.com/namallium/atomic.git
 
 # Step 5: Setup npm linked packages for theme dependencies
 npm run local:theme-link

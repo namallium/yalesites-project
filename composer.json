@@ -3,7 +3,7 @@
   "description": "Pantheon upstream with dependencies share by all YaleSites",
   "type": "project",
   "repositories": {
-    "yalesites-org/yalesites_profile": {
+    "namallium/yalesites_profile": {
       "type": "path",
       "url": "web/profiles/custom/yalesites_profile"
     },
@@ -33,7 +33,7 @@
     "drush/drush": "^11 || ^12",
     "oomphinc/composer-installers-extender": "^2.0",
     "pantheon-systems/drupal-integrations": "^10",
-    "yalesites-org/yalesites_profile": "*"
+    "namallium/yalesites_profile": "*"
   },
   "require-dev": {
     "drupal/core-dev": "^10"

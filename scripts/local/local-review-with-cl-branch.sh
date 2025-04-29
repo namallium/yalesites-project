@@ -12,9 +12,9 @@ read -p "Which branch of the component-library-twig repo do you need? " BRANCH
 _say "Move into atomic and checkout develop"
 cd web/themes/contrib/atomic || exit
 _say "Delete installed component library"
-rm -rf node_modules/@yalesites-org/component-library-twig
+rm -rf node_modules/@namallium/component-library-twig
 _say "Clone component library"
-[ ! -d "_yale-packages/component-library-twig" ] && git clone git@github.com:yalesites-org/component-library-twig.git _yale-packages/component-library-twig
+[ ! -d "_yale-packages/component-library-twig" ] && git clone git@github.com:namallium/component-library-twig.git _yale-packages/component-library-twig
 _say "Move into component library"
 cd _yale-packages/component-library-twig || exit
 _say "Checkout the specified branch"
@@ -25,8 +25,8 @@ npm ci
 npm run build
 _say "Move into theme and create empty component-library-twig directory"
 cd ../..
-mkdir node_modules/@yalesites-org/component-library-twig
+mkdir node_modules/@namallium/component-library-twig
 _say "Copy built dist folder"
-cp -r _yale-packages/component-library-twig/dist node_modules/@yalesites-org/component-library-twig/.
+cp -r _yale-packages/component-library-twig/dist node_modules/@namallium/component-library-twig/.
 _say "Copy built components folder"
-cp -r _yale-packages/component-library-twig/components node_modules/@yalesites-org/component-library-twig/.
+cp -r _yale-packages/component-library-twig/components node_modules/@namallium/component-library-twig/.

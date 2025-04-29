@@ -149,4 +149,4 @@ The following were used to figure out how to implement this solution:
 
 ## Contributions
 
-If you have any suggestions or improvements, please feel free to modify this document and submit a pull request.  Please follow the [contributing guidelines](https://github.com/yalesites-org/yalesites-project/blob/develop/docs/CONTRIBUTING.md) from the repository.
+If you have any suggestions or improvements, please feel free to modify this document and submit a pull request.  Please follow the [contributing guidelines](https://github.com/namallium/yalesites-project/blob/develop/docs/CONTRIBUTING.md) from the repository.

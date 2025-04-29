@@ -27,12 +27,12 @@ regions_hidden:
 components:
   namespaces:
     tokens:
-      - /themes/contrib/atomic/node_modules/@yalesites-org/component-library-twig/components/00-tokens
+      - /themes/contrib/atomic/node_modules/@namallium/component-library-twig/components/00-tokens
     atoms:
-      - /themes/contrib/atomic/node_modules/@yalesites-org/component-library-twig/components/01-atoms
+      - /themes/contrib/atomic/node_modules/@namallium/component-library-twig/components/01-atoms
     molecules:
-      - /themes/contrib/atomic/node_modules/@yalesites-org/component-library-twig/components/02-molecules
+      - /themes/contrib/atomic/node_modules/@namallium/component-library-twig/components/02-molecules
     organisms:
-      - /themes/contrib/atomic/node_modules/@yalesites-org/component-library-twig/components/03-organisms
+      - /themes/contrib/atomic/node_modules/@namallium/component-library-twig/components/03-organisms
     page-layouts:
-      - /themes/contrib/atomic/node_modules/@yalesites-org/component-library-twig/components/04-page-layouts
+      - /themes/contrib/atomic/node_modules/@namallium/component-library-twig/components/04-page-layouts

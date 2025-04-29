@@ -69,7 +69,7 @@ All changes are merged into this project using GitHub Pull Requests. The process
 ### Review and approval workflow
 
 - Follow the naming convention `YALB-###: Short description` where ### is the JIRA ticket number and a short description expresses the purpose of the work. This should be consistent with the branch naming convention.
-- Use the [YaleSite-org PR template](https://github.com/yalesites-org/.github/blob/main/.github/PULL_REQUEST_TEMPLATE.md) as it outlines the minimum information required to describe the change. This includes JIRA ticket numbers, a description of the changes, and step-by-step instructions for validating the work.
+- Use the [YaleSite-org PR template](https://github.com/namallium/.github/blob/main/.github/PULL_REQUEST_TEMPLATE.md) as it outlines the minimum information required to describe the change. This includes JIRA ticket numbers, a description of the changes, and step-by-step instructions for validating the work.
 - The contributor responsible for the work should mark themselves as the `assignee`. PRs can be made ahead of a review by applying the `work in progress` label.
 - When ready for review, add 1 or more `reviewers` to the PR and change the label to `ready for review`. Members of the YaleSites project team should also post a link to the PR in the corresponding JIRA ticket and any relevant Teams channel and tagging the reviewers.
 - Reviewers will test code quality, functionality, design, and other disciplines as needed. Add additional reviewers if the work is beyond your skillset. The work is then approved or changes are requested. Please provide meaningful feedback using the GitHub review system.

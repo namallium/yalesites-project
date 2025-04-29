@@ -21,14 +21,14 @@ class GitHubApplet extends EmbedSourceBase implements EmbedSourceInterface {
   /**
    * {@inheritdoc}
    */
-  protected static $pattern = '/^https:\/\/yalesites-org\.github\.io\/(?<repo_name>[\w-]+)\/(?<app_directory>.*?)\/?$/';
+  protected static $pattern = '/^https:\/\/namallium\.github\.io\/(?<repo_name>[\w-]+)\/(?<app_directory>.*?)\/?$/';
 
   /**
    * {@inheritdoc}
    */
   protected static $template = '
-    <script type="module" crossorigin src="https://yalesites-org.github.io/{{ repo_name }}/{{ app_directory }}/app.js"></script>
-    <link rel="stylesheet" crossorigin href="https://yalesites-org.github.io/{{ repo_name }}/{{ app_directory }}/app.css">
+    <script type="module" crossorigin src="https://namallium.github.io/{{ repo_name }}/{{ app_directory }}/app.js"></script>
+    <link rel="stylesheet" crossorigin href="https://namallium.github.io/{{ repo_name }}/{{ app_directory }}/app.css">
     <div id="{{ repo_name }}"></div>';
 
   /**
@@ -39,6 +39,6 @@ class GitHubApplet extends EmbedSourceBase implements EmbedSourceInterface {
   /**
    * {@inheritdoc}
    */
-  protected static $example = 'https://yalesites-org.github.io/yale-po-filter-app/assets';
+  protected static $example = 'https://namallium.github.io/yale-po-filter-app/assets';
 
 }

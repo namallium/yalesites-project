@@ -59,7 +59,7 @@ function yalesites_git_clone() {
   # Clone if directory doesn't exist
   [ ! -d "$git_path" ] && 
     _say "Cloning the $branch branch of the $name repo" && 
-    git clone git@github.com:yalesites-org/"$name".git "$git_path" -b "$branch"
+    git clone git@github.com:namallium/"$name".git "$git_path" -b "$branch"
 }
 
 # git_checkout
@@ -325,7 +325,7 @@ function _local-git-checkout() {
   cd ../..
 
   _say "Using the component-library global npm link inside the atomic theme"
-  npm link @yalesites-org/component-library-twig
+  npm link @namallium/component-library-twig
 
   [ "$verbose" = true ] && _say "Moving into the component library"
   cd _yale-packages/component-library-twig || (_error "Could not find component-library-twig repo. Are you in the right directory?" && exit 1)
@@ -334,17 +334,17 @@ function _local-git-checkout() {
   npm ci -y
 
   _say "Using the tokens global npm link inside the component library"
-  npm link @yalesites-org/tokens
+  npm link @namallium/tokens
 
   [ "$verbose" = true ] && _say "Moving back to atomic"
   cd ../..
 
   _say "Attempting to npm link tokens inside atomic"
   # You can't do this because only one npm link can exist at a time on a node_module folder :(
-  # npm link @yalesites-org/tokens
+  # npm link @namallium/tokens
   # So we do it ourselves
   rm -rf node_modules/@yalesitesorg/tokens 
-  cd node_modules/@yalesites-org || (_error "Could not find component-library-twig repo. Are you in the right directory?" && exit 1)
+  cd node_modules/@namallium || (_error "Could not find component-library-twig repo. Are you in the right directory?" && exit 1)
   ln -s ../../_yale-packages/tokens tokens
   cd ../..
 
