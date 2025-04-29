@@ -12,7 +12,7 @@ database:
 use_dns_when_possible: true
 composer_version: "2"
 web_environment:
-  - COMPOSER_AUTH={\"github-oauth\":{\"github.com\":\"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\"}}
+  - COMPOSER_AUTH=${COMPOSER_AUTH}
   - YALESITES_BUILD_TOKEN=${YALESITES_BUILD_TOKEN}
 corepack_enable: false
 
